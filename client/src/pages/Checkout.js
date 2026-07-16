@@ -43,7 +43,7 @@ export default function Checkout({ cart, setCart }) {
     }
     setLoading(true);
     try {
-      await axios.post('http://localhost:5000/api/orders', {
+      await axios.post('https://shopease-backend-n2b0.onrender.com/api/orders', {
         userId: user.id,
         products: cart,
         amount: total,

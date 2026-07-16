@@ -19,7 +19,7 @@ export default function Orders() {
                     setLoading(false);
                     return;
                 }
-                const res = await axios.get(`http://localhost:5000/api/orders/${userId}`, {
+                const res = await axios.get(`https://shopease-backend-n2b0.onrender.com/api/orders/${userId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 // Sort orders check by descending date (newest first)
